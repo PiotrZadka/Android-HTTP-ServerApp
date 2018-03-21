@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.piotrzadka.androidhttpserverapp.NewStudentActivity">
+
+    <EditText
+        android:id="@+id/stuNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="Student Name"
+        android:inputType="textPersonName"
+        android:text="@string/stuNameTextView" />
+
+    <Spinner
+        android:id="@+id/spinnerGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/stuNameTextView" />
+
+    <EditText
+        android:id="@+id/dobTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinnerGender"
+        android:ems="10"
+        android:hint="Date of birth"
+        android:inputType="textPersonName"
+        android:text="@string/dobTextView" />
+
+    <EditText
+        android:id="@+id/addressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/dobTextView"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textPersonName"
+        android:text="@string/addressTextView" />
+
+    <EditText
+        android:id="@+id/postcodeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/addressTextView"
+        android:ems="10"
+        android:hint="Post Code"
+        android:inputType="textPersonName"
+        android:text="@string/postcodeTextView" />
+
+    <EditText
+        android:id="@+id/idTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/postcodeTextView"
+        android:ems="10"
+        android:hint="Student Number"
+        android:inputType="textPersonName"
+        android:text="@string/idTextView" />
+
+    <EditText
+        android:id="@+id/courseTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/idTextView"
+        android:ems="10"
+        android:hint="Course Title"
+        android:inputType="textPersonName"
+        android:text="@string/courseTitleTextView" />
+
+    <EditText
+        android:id="@+id/startDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/courseTitleTextView"
+        android:ems="10"
+        android:hint="Start Date"
+        android:inputType="textPersonName"
+        android:text="@string/startDateTextView" />
+
+    <EditText
+        android:id="@+id/bursaryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/startDateTextView"
+        android:ems="10"
+        android:hint="Bursary Amount"
+        android:inputType="textPersonName"
+        android:text="@string/bursaryTextView" />
+
+    <EditText
+        android:id="@+id/emailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/bursaryTextView"
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="textPersonName"
+        android:text="@string/emailTextView" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/submitButton" />
+
+</RelativeLayout>

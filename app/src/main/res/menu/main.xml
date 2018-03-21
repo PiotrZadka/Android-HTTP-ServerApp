@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".DetailsActivity">
+
+    <!-- SEARCH ICON -->
+    <item
+        android:id="@+id/action_edit"
+        android:icon="@drawable/ic_create_black_24dp"
+        android:title=""
+        app:showAsAction="always"/>
+</menu>

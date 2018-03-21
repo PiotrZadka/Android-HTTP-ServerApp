@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">AndroidHTTPServerApp</string>
+    <string name="addStudent">Add New Student</string>
+    <string name="studentLabel">Student Details</string>
+    <string name="studentDesc"></string>
+    <string name="stuNameTextView"></string>
+    <string name="dobTextView"></string>
+    <string name="addressTextView"></string>
+    <string name="postcodeTextView"></string>
+    <string name="idTextView"></string>
+    <string name="courseTitleTextView"></string>
+    <string name="startDateTextView"></string>
+    <string name="bursaryTextView"></string>
+    <string name="emailTextView"></string>
+    <string name="submitButton">Add</string>
+    <string name="buttonUpdate">Update</string>
+    <string name="student_nameTextView">Student Name</string>
+    <string name="date_of_birthTextView">Date of birth</string>
+    <string name="address_TextView">Address</string>
+    <string name="post_codeTextView">Post Code</string>
+    <string name="student_numberTextView">Student Number</string>
+    <string name="course_titleTextView">Course Title</string>
+    <string name="start_dateTextView">Start Date</string>
+    <string name="bursary_amountTextView">Bursary Amount</string>
+    <string name="email_addressTextView">Email Address</string>
+</resources>
