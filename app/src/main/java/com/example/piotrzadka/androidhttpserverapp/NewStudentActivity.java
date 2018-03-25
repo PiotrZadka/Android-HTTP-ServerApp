@@ -76,6 +76,11 @@ public class NewStudentActivity extends AppCompatActivity {
                 params.put("apikey", "13d0d2fcfa");
                 String url = "http://radikaldesign.co.uk/sandbox/studentapi/add.php";
                 postNewStudent(url, params);
+
+                // Clear Activity Stack and return to edit activity
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
             }
         });
     }

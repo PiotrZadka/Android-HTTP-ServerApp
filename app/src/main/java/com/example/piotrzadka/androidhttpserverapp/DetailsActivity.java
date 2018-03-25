@@ -11,18 +11,23 @@ import android.widget.TextView;
 import org.w3c.dom.Text;
 
 public class DetailsActivity extends AppCompatActivity {
-
     TextView details;
     String studentDesc;
+    Student student;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
+    }
+
+    protected void onResume(){
+        super.onResume();
         // get the intent
         Bundle extras = getIntent().getExtras();
-
         // create a student object from student object class that was passed over from the MainActivity
-        Student student = (Student) extras.get("student");
+        student = (Student) extras.get("student");
 
         studentDesc =   "Name: "+student.getName()+"\n"+
                       "Gender: "+student.getGender()+"\n"+
@@ -42,13 +47,12 @@ public class DetailsActivity extends AppCompatActivity {
         //Set details
         details.setText(String.valueOf(studentDesc));
 
-
     }
 
     // Placing edit button in toolbar
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
-        getMenuInflater().inflate(R.menu.main, menu);
+        getMenuInflater().inflate(R.menu.edit, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -56,6 +60,7 @@ public class DetailsActivity extends AppCompatActivity {
     @Override
     public  boolean onOptionsItemSelected(MenuItem menu){
         Intent intent = new Intent(getApplicationContext(), UpdateStudentActivity.class);
+        intent.putExtra("student", student);
         startActivity(intent);
         return super.onOptionsItemSelected(menu);
     }

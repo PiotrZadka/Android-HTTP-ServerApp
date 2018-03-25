@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -129,14 +131,13 @@ public class MainActivity extends AppCompatActivity {
                 // specify which activity you want to open/start
                 Intent intent = new Intent(getApplicationContext(), DetailsActivity.class);
 
-                // add/put the selected cheese object in to the intent which will
+                // add/put the selected student object in to the intent which will
                 // be passed over to the activity that is started
                 // note we use a KEY:VALUE structure to pass variable/objects
-                // between activities. Here the key is ‘cheese’ and the value is
-                // the cheese object from the cheese array list using the position
+                // between activities. Here the key is ‘student’ and the value is
+                // the student object from the student array list using the position
                 // which is specified by the ‘i’ variable.
                 intent.putExtra("student", allStudent.get(i));
-
                 // launch the activity
                 startActivity(intent);
             } });
@@ -238,6 +239,20 @@ public class MainActivity extends AppCompatActivity {
             result.append(URLEncoder.encode(entry.getValue(), "UTF-8"));
         }
         return result.toString();
+    }
+
+    // Placing refresh button in toolbar
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.refresh, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    // refresh button on click behaviour
+    @Override
+    public  boolean onOptionsItemSelected(MenuItem menu){
+        onResume();
+        return super.onOptionsItemSelected(menu);
     }
 
 
