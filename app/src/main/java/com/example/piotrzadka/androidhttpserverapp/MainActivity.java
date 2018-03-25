@@ -251,7 +251,9 @@ public class MainActivity extends AppCompatActivity {
     // refresh button on click behaviour
     @Override
     public  boolean onOptionsItemSelected(MenuItem menu){
-        onResume();
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+        startActivity(intent);
         return super.onOptionsItemSelected(menu);
     }
 
