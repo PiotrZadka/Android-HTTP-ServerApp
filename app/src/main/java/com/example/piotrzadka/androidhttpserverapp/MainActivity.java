@@ -148,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
             public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Gson gson = new Gson();
                 final HashMap<String, String> params = new HashMap<>();
-                int studentNumber = allStudent.get(i).getstuId();
+                int studentNumber = allStudent.get(i).getStudentNumber();
                 String idJson = gson.toJson(studentNumber);
                 params.put("studentnumber", idJson);
                 params.put("apikey", "13d0d2fcfa");

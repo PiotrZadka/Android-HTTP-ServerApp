@@ -41,7 +41,7 @@ public class NewStudentActivity extends AppCompatActivity {
         //set the spinners adapter to the previously created one.
         dropdown.setAdapter(adapter);
 
-
+        //identyfing the edit texts on layout
         Button submit = findViewById(R.id.submitButton);
         final HashMap<String, String> params = new HashMap<>();
         final EditText name = findViewById(R.id.stuNameTextView);
@@ -54,6 +54,7 @@ public class NewStudentActivity extends AppCompatActivity {
         final EditText bursary = findViewById(R.id.bursaryTextView);
         final EditText email = findViewById(R.id.emailTextView);
 
+        // What happens when we submit the values
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -85,6 +86,7 @@ public class NewStudentActivity extends AppCompatActivity {
         });
     }
 
+    // Sent POST request to server
         public String postNewStudent(String requestURL, HashMap<String, String> postDataParams) {
             URL url;
             String response = "";

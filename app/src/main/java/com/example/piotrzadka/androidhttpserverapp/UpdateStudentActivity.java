@@ -35,11 +35,12 @@ public class UpdateStudentActivity extends AppCompatActivity {
         setContentView(R.layout.activity_update_student);
     }
 
+    // When we get back to the Activity
     protected void onResume(){
         super.onResume();
         Bundle extras = getIntent().getExtras();
-        // create a student object from student object class that was passed over from the MainActivity
 
+        // dropdown M/F
         final Spinner studentGender = findViewById(R.id.spinnerGenderUpdate);
         //create a list of items for the spinner.
         String[] genders = new String[]{"M", "F"};
@@ -67,7 +68,7 @@ public class UpdateStudentActivity extends AppCompatActivity {
         studentDOB.setText(student.getDob());
         studentAddress.setText(student.getAddress());
         studentPostcode.setText(student.getPostcode());
-        studentNumber.setText(String.valueOf(student.getstuId()));
+        studentNumber.setText(String.valueOf(student.getStudentNumber()));
         studentCourse.setText(student.getCourseTitle());
         studentStart.setText(student.getStartDate());
         studentBursary.setText(String.valueOf(student.getBursary()));

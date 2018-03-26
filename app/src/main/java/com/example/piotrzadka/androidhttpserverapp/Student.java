@@ -42,7 +42,7 @@ public class Student implements Serializable {
     public String getPostcode() {
         return postcode;
     }
-    public int getstuId() {
+    public int getStudentNumber() {
         return studentNumber;
     }
     public String getCourseTitle() {
@@ -74,7 +74,7 @@ public class Student implements Serializable {
     public void setPostcode(String postcode) {
         this.postcode = postcode;
     }
-    public void setStuId(int stuId) {
+    public void setStudentNumber(int studentNumber) {
         this.studentNumber = studentNumber;
     }
     public void setCourseTitle(String courseTitle) {

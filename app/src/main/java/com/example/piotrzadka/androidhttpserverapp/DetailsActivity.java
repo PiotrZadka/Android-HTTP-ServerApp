@@ -20,10 +20,7 @@ public class DetailsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
-    }
 
-    protected void onResume(){
-        super.onResume();
         // get the intent
         Bundle extras = getIntent().getExtras();
         // create a student object from student object class that was passed over from the MainActivity
@@ -34,7 +31,7 @@ public class DetailsActivity extends AppCompatActivity {
                          "DOB: "+student.getDob()+"\n"+
                      "Address: "+student.getAddress()+"\n"+
                     "Postcode: "+student.getPostcode()+ "\n"+
-                          "ID: "+student.getstuId()+"\n"+
+                          "ID: "+student.getStudentNumber()+"\n"+
                 "Course Title: "+student.getCourseTitle()+"\n"+
                   "Start Date: "+student.getStartDate()+"\n"+
                      "Bursary: "+student.getBursary()+"\n"+
