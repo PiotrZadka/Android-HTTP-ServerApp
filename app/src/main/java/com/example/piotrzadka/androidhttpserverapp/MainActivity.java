@@ -34,6 +34,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Created by Piotr Zadka 14056838 on 26.03.2018.
+ */
+
 public class MainActivity extends AppCompatActivity {
 
     String[] students;

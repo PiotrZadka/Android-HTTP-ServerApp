@@ -3,7 +3,7 @@ package com.example.piotrzadka.androidhttpserverapp;
 import java.io.Serializable;
 
 /**
- * Created by Piotr Zadka on 21.03.2018.
+ * Created by Piotr Zadka 14056838 on 26.03.2018.
  */
 
 public class Student implements Serializable {

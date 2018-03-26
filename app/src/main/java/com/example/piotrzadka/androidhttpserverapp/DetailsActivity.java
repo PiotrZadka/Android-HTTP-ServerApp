@@ -10,6 +10,10 @@ import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
+/**
+ * Created by Piotr Zadka 14056838 on 26.03.2018.
+ */
+
 public class DetailsActivity extends AppCompatActivity {
     TextView details;
     String studentDesc;
